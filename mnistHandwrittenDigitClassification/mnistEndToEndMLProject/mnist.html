@@ -2,7 +2,8 @@
 
 <head>
     <title>MNIST</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.5"> </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.10.0"></script> -->
     <script type="text/javascript">
         // Variables for referencing the canvas and 2dcanvas context
         var canvas, ctx;
@@ -139,16 +140,15 @@
                 canvas.addEventListener('touchend', sketchpad_touchEnd, false);
                 canvas.addEventListener('touchmove', sketchpad_touchMove, false);
             }
-            // model = await tf.loadModel('file:/home/debadatta/ML_learning_Path/Data_Science_and_ML_Projects/mnistHandwrittenDigitClassification/mnistEndToEndMLProject/model.json');
-            // const tf = require("@tensorflow/tfjs");
-            // const tfn = require("@tensorflow/tfjs-node");
-            // const handler = "/home/debadatta/ML_learning_Path/Data_Science_and_ML_Projects/mnistHandwrittenDigitClassification/mnistEndToEndMLProject/model.json";
-            const model = await tf.loadModel("https://raw.githubusercontent.com/ddb95/Data_Science_and_ML_Projects/master/mnistHandwrittenDigitClassification/mnistEndToEndMLProject/model.json");
+            model = await tf.loadModel(
+                "https://nitinbahuguna.github.io/mnist/model.json"
+            );
             console.log(model);
 
         }
 
         function predict() {
+            debugger;
             const imageData = ctx.getImageData(0, 0, 140, 140);
             //convert to tensor
             var tfImg = tf.fromPixels(imageData, 1);
