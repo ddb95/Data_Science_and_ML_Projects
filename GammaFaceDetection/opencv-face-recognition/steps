@@ -1,0 +1,16 @@
+1. Create Facial Dataset
+2. Extract Embeddings
+3. Train the model
+4. Recognize
+Done.
+
+
+Now, main task is to automate the process
+1. every 2 seconds take the photo and when photo counts to 20 close the Createdataset window
+2. Save the Name and Id to mongoDB
+3. We'll identify using employeeID
+4. When they identify a face, we'll add the time when he was seen
+5. (On demand) The last time when he/she was seen on a particular date.
+
+29th Aug
+Automate the Create Dataset process as per requirement
