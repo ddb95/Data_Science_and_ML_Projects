@@ -12,8 +12,8 @@ from bs4.element import Comment
 
 SCOPE = 'user-read-currently-playing'
 song_info = None
-SPOTIFY_TOKEN = 'BQA2bPzPzQF92JZuxT3USwk9cjjnTBS82fwpNmJ3rha2R5Dwwp8dsxD3WAOHZV4CGp8jB31SqbE_AqnIf51mOSWLO-wiEcT6iToPJToEGGNifPKUoIS6RczsHwoGeB6Xmp23pH2VW0KpFUs5khLxrBwQFbxAtu3xaNe3KcJuX1L5bZ6eMSSbnM8EwEHnoU4P1I70znASwaI5JwlldM9e8tX1BOZyC_mSlw6Lt8EhAYh4rNtrj6lwrU6Z4DHQA1oXYWy1gqOwBScV89uvjkOyxJqXLMZHRwtl'
-GENIUS_TOKEN = 'tZMkrKUUYraiM9Wnkt1vbIOC3DoJrG5HJAfOOdhFD47jJSTND7Z8JhfjlxzVmxfQ'
+SPOTIFY_TOKEN = '***********************'
+GENIUS_TOKEN = '********************'
 
 
 def getCurrentTrack():

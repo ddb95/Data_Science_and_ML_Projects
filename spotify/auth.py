@@ -12,14 +12,14 @@ from bs4 import BeautifulSoup
 from bs4.element import Comment
 
 PORT_NUMBER = 8080
-SPOTIPY_CLIENT_ID = '5a5497e04238430b8bdf1924d39b5e90'
-SPOTIPY_CLIENT_SECRET = '3ce4eb246a904b7a87622ee739157a63'
+SPOTIPY_CLIENT_ID = '*******'
+SPOTIPY_CLIENT_SECRET = '*****'
 SPOTIPY_REDIRECT_URI = 'http://localhost:8080/'
 SCOPE = 'user-read-currently-playing'
 CACHE = '.spotipyoauthcache'
 song_info = None
-SPOTIFY_TOKEN = 'BQCVl0MsieibyzClXwsriKsFUBLuLRJyNh1hBgkw3COZyRfDaSwP47Dk3HoeBcaIT2L0MUe2PBLkvpE9EDvmyof-kfmksET96d4ThYbYy3rPSVnPUFjsE4cJ8ROGL658M-uZkqcYUuIioFOW5bxzSHbSjeLGE2HnlDa5rjsAEvXv7HavGs8UZsZh6Y71EFMwbnivDSoEuvZ3lyRpyiRCoGQgeLoorEBFmp5tiYfUKZMveKqKUI7ZFdIUrS79wuNZ2fYhmwarEY5ILR0Jd8HYpGzG-WdgI5BO'
-GENIUS_TOKEN = 'tZMkrKUUYraiM9Wnkt1vbIOC3DoJrG5HJAfOOdhFD47jJSTND7Z8JhfjlxzVmxfQ'
+SPOTIFY_TOKEN = '*********************'
+GENIUS_TOKEN = '******************'
 
 sp_oauth = oauth2.SpotifyOAuth(SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI, scope=SCOPE,
                                cache_path=CACHE)
